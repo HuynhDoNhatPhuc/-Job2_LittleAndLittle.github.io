@@ -1,0 +1,6 @@
+2022-04-18T08:12:09+00:00 CRITICAL Cannot redeclare registered() (previously declared in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:20) in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 162
+
+2022-04-18T08:12:09+00:00 CRITICAL Cannot redeclare registered() (previously declared in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:20) in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 162
+
+2022-04-18T08:12:20+00:00 CRITICAL Cannot redeclare registered() (previously declared in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:20) in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 162
+

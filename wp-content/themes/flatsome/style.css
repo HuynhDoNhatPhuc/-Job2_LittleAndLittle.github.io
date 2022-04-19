@@ -1,0 +1,39 @@
+/*
+Theme Name:        Flatsome
+Theme URI:         http://flatsome.uxthemes.com/
+Author:            UX-Themes
+Author URI:        http://www.uxthemes.com/
+Description:       Multi-Purpose Responsive WooCommerce Theme
+Version:           3.12.1
+Requires at least: 4.7.0
+Requires PHP:      5.6.20
+Text Domain:       flatsome
+License:           http://themeforest.net/licenses
+License URI:       http://themeforest.net/licenses
+*/
+
+
+/***************
+All custom CSS should be added to Flatsome > Advanced > Custom CSS,
+or in the style.css of a Child Theme.
+***************/
+.form-vnpay{
+    max-width:800px /*-- change this to get your desired form width --*/;
+	margin:0 auto;
+    width: 300px;
+}
+
+.form-vnpay_row{
+    width: 100%;
+}
+.form-vnpay_column, 
+.form-vnpay_column-half{
+	float: left;
+	position: relative;
+	padding: 0.25rem;
+	width:100%;
+	display: block;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
