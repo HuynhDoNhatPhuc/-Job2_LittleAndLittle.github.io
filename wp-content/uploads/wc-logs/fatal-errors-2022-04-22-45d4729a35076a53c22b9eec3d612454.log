@@ -1,0 +1,10 @@
+2022-04-22T02:15:55+00:00 CRITICAL require_once(): Failed opening required './config.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 96
+
+2022-04-22T02:16:25+00:00 CRITICAL require_once(): Failed opening required '../config.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 96
+
+2022-04-22T02:16:38+00:00 CRITICAL require_once(): Failed opening required './././config.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 96
+
+2022-04-22T09:36:58+00:00 CRITICAL require_once(): Failed opening required './config.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 248
+
+2022-04-22T09:37:40+00:00 CRITICAL require_once(): Failed opening required './config.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 248
+

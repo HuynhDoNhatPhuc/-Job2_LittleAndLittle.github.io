@@ -36,7 +36,7 @@ foreach ($inputData as $key => $value) {
 $secureHash = hash_hmac('sha512', $hashData, $vnp_HashSecret);
 $vnpTranId = $inputData['vnp_TransactionNo']; //Mã giao dịch tại VNPAY
 $vnp_BankCode = $inputData['vnp_BankCode']; //Ngân hàng thanh toán
-$vnp_Amount = $inputData['vnp_Amount']/100; // Số tiền thanh toán VNPAY phản hồi
+$vnp_Amount = $inputData['vnp_Amount'] / 100; // Số tiền thanh toán VNPAY phản hồi
 
 $Status = 0; // Là trạng thái thanh toán của giao dịch chưa có IPN lưu tại hệ thống của merchant chiều khởi tạo URL thanh toán.
 $orderId = $inputData['vnp_TxnRef'];
@@ -58,6 +58,7 @@ try {
                         $Status = 1; // Trạng thái thanh toán thành công
                     } else {
                         $Status = 2; // Trạng thái thanh toán thất bại / lỗi
+
                     }
                     //Cài đặt Code cập nhật kết quả thanh toán, tình trạng đơn hàng vào DB
                     //

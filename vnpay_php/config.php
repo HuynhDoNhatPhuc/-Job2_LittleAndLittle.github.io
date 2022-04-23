@@ -1,4 +1,20 @@
 <?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password);
+
+// Check connection
+if (!$conn) {
+  die("Connection failed: " . mysqli_connect_error());
+}
+
+?>
+
+
+<?php
 date_default_timezone_set('Asia/Ho_Chi_Minh');
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -9,7 +25,7 @@ date_default_timezone_set('Asia/Ho_Chi_Minh');
 $vnp_TmnCode = "VUW5Z6HE"; //Website ID in VNPAY System
 $vnp_HashSecret = "EMHVNWENWJMYZACYYQJFSVEMMHRCONLL"; //Secret key
 $vnp_Url = "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html";
-$vnp_Returnurl = "http://localhost:8081/littleandlittle/vnpay_php/vnpay_return.php";
+$vnp_Returnurl = "http://localhost:8081/littleandlittle/thanh-toan-thanh-cong/";
 $vnp_apiUrl = "http://sandbox.vnpayment.vn/merchant_webapi/merchant.html";
 //Config input format
 //Expire

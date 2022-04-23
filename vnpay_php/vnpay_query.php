@@ -20,7 +20,7 @@
             </div>
             <div style="width: 100%;padding-top:0px;font-weight: bold;color: #333333"><h3>Querydr</h3></div>
             <div style="width: 100% ;border-bottom: 2px solid black;padding-bottom: 20px" >
-                <form action="/vnpay_php/vnpay_query.php" id="frmCreateOrder" method="post">        
+                <form action="/vnpay_php/vnpay_query.php" id="frmCreateOrder" method="get">        
                     <div class="form-group">
                         <label >OrderID</label>
                         <input class="form-control" data-val="true"  name="orderid" type="text" value="" />
