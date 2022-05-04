@@ -1,0 +1,9 @@
+2022-05-02T04:56:43+00:00 CRITICAL Uncaught Error: Unsupported operand types in C:\xampp\htdocs\littleandlittle\wp-content\plugins\pinterest-for-woocommerce\src\TrackerSnapshot.php:88
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-content\plugins\pinterest-for-woocommerce\src\TrackerSnapshot.php(61): Automattic\WooCommerce\Pinterest\TrackerSnapshot::parse_settings()
+#1 C:\xampp\htdocs\littleandlittle\wp-content\plugins\pinterest-for-woocommerce\src\TrackerSnapshot.php(43): Automattic\WooCommerce\Pinterest\TrackerSnapshot::include_snapshot_data(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\class-wp-hook.php(307): Automattic\WooCommerce\Pinterest\TrackerSnapshot::Automattic\WooCommerce\Pinterest\{closure}(Array)
+#3 C:\xampp\htdocs\littleandlittle\wp-includes\plugin.php(189): WP_Hook->apply_filters(Array, Array)
+#4 C:\xampp\htdocs\littleandlittle\wp-content\plugins\woocommerce\includes\class-wc-tracker.php(175): apply_filters('woocommerce_tra...', Array)
+#5 C:\xampp\htdocs\littleandlittle\wp-content\plugins\woocommerce\includes\class- in C:\xampp\htdocs\littleandlittle\wp-content\plugins\pinterest-for-woocommerce\src\TrackerSnapshot.php on line 88
+

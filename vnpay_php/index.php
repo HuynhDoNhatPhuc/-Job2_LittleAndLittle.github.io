@@ -14,10 +14,11 @@ require_once("./config.php");
 $vnp_TxnRef = $_POST['order_id'];
 $vnp_OrderInfo = $_POST['order_desc'];
 $vnp_OrderType = $_POST['order_type'];
-$vnp_Amount = str_replace(',', '', $_POST['amount']) * 100;
+$vnp_Amount = $_POST['amount'] * 100;
+// $vnp_OrderTickets = $_POST['order_tickets'];
 $vnp_Locale = $_POST['language'];
-// $vnp_BankCode = $_POST['bank_code'];
-
+$vnp_BankCode = $_POST['bank_code'];
+$vnp_IpAddr = $_SERVER['REMOTE_ADDR'];
 // $vnp_Bill_Mobile = $_POST['txt_billing_mobile'];
 // $vnp_Bill_Email = $_POST['txt_billing_email'];
 // $fullName = trim($_POST['txt_billing_fullname']);
@@ -33,6 +34,7 @@ $inputData = array(
     "vnp_Command" => "pay",
     "vnp_CreateDate" => date('YmdHis'),
     "vnp_CurrCode" => "VND",
+    // "vnp_OrderTickets" => $vnp_OrderTickets,
     "vnp_Locale" => $vnp_Locale,
     "vnp_OrderInfo" => $vnp_OrderInfo,
     "vnp_OrderType" => $vnp_OrderType,
@@ -43,6 +45,10 @@ $inputData = array(
     // "vnp_Bill_FirstName"=>$vnp_Bill_FirstName,
     // "vnp_Bill_LastName"=>$vnp_Bill_LastName,
 );
+
+if (isset($vnp_BankCode) && $vnp_BankCode != "") {
+    $inputData['vnp_BankCode'] = $vnp_BankCode;
+}
 
 ksort($inputData);
     $query = "";

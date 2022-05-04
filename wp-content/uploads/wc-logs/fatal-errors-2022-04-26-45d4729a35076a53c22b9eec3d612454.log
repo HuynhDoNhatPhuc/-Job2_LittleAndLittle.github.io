@@ -1,0 +1,28 @@
+2022-04-26T02:19:16+00:00 CRITICAL require_once(): Failed opening required 'C:\xampp\htdocs\littleandlittle/wp-admin/includes/upgarede.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\littleandlittle\wp-content\plugins\new-database-table\new-database-table.php on line 26
+
+2022-04-26T02:19:20+00:00 CRITICAL require_once(): Failed opening required 'C:\xampp\htdocs\littleandlittle/wp-admin/includes/upgarede.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\littleandlittle\wp-content\plugins\new-database-table\new-database-table.php on line 26
+
+2022-04-26T02:19:20+00:00 CRITICAL require_once(): Failed opening required 'C:\xampp\htdocs\littleandlittle/wp-admin/includes/upgarede.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\littleandlittle\wp-content\plugins\new-database-table\new-database-table.php on line 26
+
+2022-04-26T02:20:39+00:00 CRITICAL require_once(): Failed opening required 'C:\xampp\htdocs\littleandlittle/wp-admin/includes/upgarede.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\littleandlittle\wp-content\plugins\new-database-table\new-database-table.php on line 26
+
+2022-04-26T02:20:42+00:00 CRITICAL require_once(): Failed opening required 'C:\xampp\htdocs\littleandlittle/wp-admin/includes/upgarede.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\littleandlittle\wp-content\plugins\new-database-table\new-database-table.php on line 26
+
+2022-04-26T02:20:42+00:00 CRITICAL require_once(): Failed opening required 'C:\xampp\htdocs\littleandlittle/wp-admin/includes/upgarede.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\littleandlittle\wp-content\plugins\new-database-table\new-database-table.php on line 26
+
+2022-04-26T02:21:37+00:00 CRITICAL require_once(): Failed opening required 'C:\xampp\htdocs\littleandlittle/./wp-admin/includes/upgarede.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\littleandlittle\wp-content\plugins\new-database-table\new-database-table.php on line 26
+
+2022-04-26T02:21:40+00:00 CRITICAL require_once(): Failed opening required 'C:\xampp\htdocs\littleandlittle/./wp-admin/includes/upgarede.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\littleandlittle\wp-content\plugins\new-database-table\new-database-table.php on line 26
+
+2022-04-26T02:21:40+00:00 CRITICAL require_once(): Failed opening required 'C:\xampp\htdocs\littleandlittle/./wp-admin/includes/upgarede.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\littleandlittle\wp-content\plugins\new-database-table\new-database-table.php on line 26
+
+2022-04-26T03:46:35+00:00 CRITICAL Uncaught Error: Call to a member function insert() on null in C:\xampp\htdocs\littleandlittle\wp-content\plugins\new-database-table\new-database-table.php:42
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\class-wp-hook.php(307): PetAdoptionTablePlugin->onAdminRefresh('')
+#1 C:\xampp\htdocs\littleandlittle\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\littleandlittle\wp-admin\admin-header.php(163): do_action('admin_head')
+#4 C:\xampp\htdocs\littleandlittle\wp-admin\plugins.php(605): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\littleandlittle\wp-content\plugins\new-database-table\new-database-table.php on line 42
+

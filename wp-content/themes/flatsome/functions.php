@@ -75,7 +75,7 @@ function vnpay(){
 
 	?>
 	<!DOCTYPE html>
-<html lang="en">
+	<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -83,7 +83,6 @@ function vnpay(){
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>Tạo mới đơn hàng</title>
         <!-- Bootstrap core CSS -->
         <link href="./././vnpay_php/assets/bootstrap.min.css" rel="stylesheet"/>
         <!-- Custom styles for this template -->
@@ -108,7 +107,7 @@ function vnpay(){
 		<div class="form-group">
 			<label for="order_id">Mã hóa đơn</label>
 			<input class="form-control" id="order_id" name="order_id" type="text" 
-				value="<?php echo date("YmdHis") ?>"/>
+				value="<?php echo date("His") ?>"/>
 		</div>
 		<div class="form-group">
 			<label for="amount">Số tiền</label>
@@ -117,8 +116,8 @@ function vnpay(){
 		</div>
 		<div class="form-group">
 			<label for="order_desc">Nội dung thanh toán</label>
-			<textarea class="form-control" cols="20" id="order_desc" 
-				name="order_desc" rows="2">Noi dung thanh toan</textarea>
+			<textarea class="form-control" cols="20" id="order_desc" name="order_desc" rows="2" >TEN KH: <?php if(isset($_GET["fullname"])) { print $_GET["fullname"]; } ?>, SDT: <?php if(isset($_GET["tel"])) { print $_GET["tel"];}?>, Email: <?php if(isset($_GET["email"])) { print $_GET["email"];}?>
+			</textarea>
 		</div>
 		<div class="form-group">
 			<label for="language">Ngôn ngữ</label>
@@ -132,9 +131,10 @@ function vnpay(){
 
 </form>
 
-
     </body>
 </html>
+
+
 	<?php
 }
 add_shortcode('vnpay','vnpay');
@@ -160,7 +160,7 @@ function payment(){
 			<div class="form-row">
 				<div class="column-halfff">
 					<label >Số lượng vé</label>
-					<input class="column-1"
+					<input class="column-1" id="order_tickets" name="order_tickets"
 						value="<?php if(isset($_GET["number"])) {echo $_GET["number"];}?>"><p style="color:#000;">vé</p>
 				</div>
 			</div>
@@ -207,23 +207,7 @@ add_shortcode('payment','payment');
 function outputticket(){
 	?>
 
-	<!-- <form action="#" id="create_outputticket-form" method="get"> 
-		<div id="outputticket-forms" class="clearfixs">
-			<div class="outputticket-form-row">
-				<div class="outputticket-form-column">
-					<p style="text-align: center; margin-bottom: 10px; padding-top: 30px;"><img class="alignnone wp-image-763" src="../wp-content/uploads/2022/04/image-3.png" alt="" width="100" height="106" /></p>
-					<p style="text-align: center; font-weight: bold; font-size: 18px; color: #000000; margin: 0;">ALT20210501<br />- - -</p>
-					<p style="text-align: center; color: #ffc226; font-weight: bold; font-size: 16px; line-height: 20px; margin: 0;">VÉ CỔNG</p>
-					<p style="text-align: center; color: #23221f; font-size: 12px; margin: 10px; line-height: 16px; ">Ngày sử dụng: <?php if(isset($_GET["date"])) { echo $_GET["date"]; } ?></p>
-					<p style="text-align: center; padding-bottom: 30px; margin-top: 10px; color: #44C4A1;">[icon name="check-circle" prefix="fas"]</p>
-					
-				</div>
-			</div>
-		</div>
-	</form>  -->
-
-
-	<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -232,7 +216,7 @@ function outputticket(){
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>Thông tin thanh toán</title>
+        <title>VNPAY RESPONSE</title>
         <!-- Bootstrap core CSS -->
         <link href="./././vnpay_php/assets/bootstrap.min.css" rel="stylesheet"/>
         <!-- Custom styles for this template -->
@@ -249,86 +233,90 @@ function outputticket(){
                 $inputData[$key] = $value;
             }
         }
-        unset($inputData['vnp_SecureHashType']);
+        
         unset($inputData['vnp_SecureHash']);
         ksort($inputData);
         $i = 0;
         $hashData = "";
         foreach ($inputData as $key => $value) {
             if ($i == 1) {
-                $hashData = $hashData . '&' . $key . "=" . $value;
+                $hashData = $hashData . '&' . urlencode($key) . "=" . urlencode($value);
             } else {
-                $hashData = $hashData . $key . "=" . $value;
+                $hashData = $hashData . urlencode($key) . "=" . urlencode($value);
                 $i = 1;
             }
         }
 
-        //$secureHash = md5($vnp_HashSecret . $hashData);
-		$secureHash = hash('sha256',$vnp_HashSecret . $hashData);
+        $secureHash = hash_hmac('sha512', $hashData, $vnp_HashSecret);
         ?>
         <!--Begin display -->
         <div class="container">
             <div class="table-responsive">
 				<div class="form-group">
-					<img class="alignnone wp-image-763" src="../wp-content/uploads/2022/04/image-3.png" alt="" width="100" height="106" style="padding: 10px 0;" />
+					<img class="alignnone wp-image-763" src="../wp-content/uploads/2022/04/image-3.png" alt="" width="100" height="106" style="padding: 10px 0; margin-top: 4px;" />
 				</div>
                 <div class="form-group">
-                    <label >Mã đơn hàng: <?php echo $_GET['vnp_TxnRef'] ?></label>
+                    <label>Mã đơn hàng: <?php echo $_GET['vnp_TxnRef'] ?></label>
                 </div>    
                 <div class="form-group">
-
-                    <label >Số tiền: <?=number_format($_GET['vnp_Amount']/100) ?> VNĐ</label>
-                </div>  
-                <div class="form-group">
-                    <label >Nội dung thanh toán: <?php echo $_GET['vnp_OrderInfo'] ?></label>
-                </div>
-				<!-- <div class="form-group">
-                    <label >Mã phản hồi (vnp_ResponseCode): <?php echo $_GET['vnp_ResponseCode'] ?></label>
-                </div>   -->
-                <div class="form-group">
-                    <label >Mã GD Tại VNPAY: <?php echo $_GET['vnp_TransactionNo'] ?></label>
-                </div> 
-                <div class="form-group">
-                    <label >Mã Ngân hàng: <?php echo $_GET['vnp_BankCode'] ?></label>
-                </div> 
-                <div class="form-group">
-                    <label >Thời gian thanh toán: <?php echo date("d m Y") ?></label>
+                    <label>Số tiền: <?php echo $_GET['vnp_Amount'] ?></label>
                 </div>
                 <div class="form-group">
-                    <label >Kết quả: <?php
+                    <label>Nội dung thanh toán: <?php echo $_GET['vnp_OrderInfo'] ?></label>
+                </div> 
+                <div class="form-group">
+                    <label>Mã phản hồi: <?php echo $_GET['vnp_ResponseCode'] ?></label>
+                </div> 
+                <div class="form-group">
+                    <label>Mã GD Tại VNPAY: <?php echo $_GET['vnp_TransactionNo'] ?></label>
+                </div> 
+                <div class="form-group">
+                    <label>Mã Ngân hàng: <?php echo $_GET['vnp_BankCode'] ?></label>
+                </div>
+                <div class="form-group">
+                    <label>Kết quả: 
+                        <?php
                         if ($secureHash == $vnp_SecureHash) {
                             if ($_GET['vnp_ResponseCode'] == '00') {
-                                $order_id = $_GET['vnp_TxnRef'];
+								$order_id = $_GET['vnp_TxnRef'];
                                 $money = $_GET['vnp_Amount']/100;
                                 $note = $_GET['vnp_OrderInfo'];
                                 $vnp_response_code = $_GET['vnp_ResponseCode'];
                                 $code_vnpay = $_GET['vnp_TransactionNo'];
                                 $code_bank = $_GET['vnp_BankCode'];
-                                $time = $_GET['vnp_PayDate'];
+								$time = $_GET['vnp_PayDate'];
                                 $date_time = substr($time, 0, 4) . '-' . substr($time, 4, 2) . '-' . substr($time, 6, 2) . ' ' . substr($time, 8, 2) . ' ' . substr($time, 10, 2) . ' ' . substr($time, 12, 2);
-                                include("./././vnpay_php/config.php");
-                                $sql = "SELECT * FROM payments WHERE order_id = '$order_id'";
-                                $query = mysqli_query($conn, $sql);
-                                $row = mysqli_num_rows($query);
                                 
-                                if ($row > 0) {
-                                    $sql = "UPDATE payments SET order_id = '$order_id', money = '$money', note = '$note', vnp_response_code = '$vnp_response_code', code_vnpay = '$code_vnpay', code_bank = '$code_bank' WHERE order_id = '$order_id'";
+								
+								$conn = mysqli_connect("localhost", "root", "", "littleandlittle");
+                                $taikhoan = $_SESSION['tk'];
+                                $query = mysqli_query($conn, "SELECT * FROM payments WHERE order_id = '$order_id'");
+                                $rowcount = mysqli_num_rows($query);
+                                if ($rowcount > 0) {
+                                    $sql = "UPDATE payments SET order_id = '$order_id', money = '$money', noi_dung_thanh_toan = '$note', vnp_response_code = '$vnp_response_code', code_vnpay = '$code_vnpay', code_bank = '$code_bank' WHERE order_id = '$order_id'";
                                    
                                     mysqli_query($conn, $sql);
                                 } else {
-                                    $sql = "INSERT INTO payments(order_id, thanh_vien, money, note, vnp_response_code, code_vnpay, code_bank, time) VALUES ('$order_id', '$taikhoan', '$money', '$note', '$vnp_response_code', '$code_vnpay', '$code_bank','$date_time')";
+                                    $sql = "INSERT INTO payments(order_id, thanh_vien, money, noi_dung_thanh_toan, vnp_response_code, code_vnpay, code_bank, time) 
+									VALUES ('$order_id', '$taikhoan', '$money', '$note', '$vnp_response_code', '$code_vnpay', '$code_bank','$date_time')";
                                     mysqli_query($conn, $sql);
                                 }
-                                
-                                echo "GD Thanh cong";
+
+
+                                echo "<span style='color:blue'>GD Thanh cong</span>
+								
+								";
                             } else {
-                                echo "GD Khong thanh cong";
+                                echo "<span style='color:red'>GD Khong thanh cong</span>";
                             }
                         } else {
-                            echo "Chu ky khong hop le";
+                            echo "<span style='color:red'>Chu ky khong hop le</span>";
                         }
-                        ?></label>
+                        ?>
+
+                    </label>
                 </div> 
+				<p style="text-align: center; margin: 10px 0; color: #44C4A1;">[icon name="check-circle" prefix="fas"]</p>
             </div>
         </div>  
     </body>

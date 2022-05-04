@@ -12,3 +12,7 @@
 
 2022-04-23T04:31:33+00:00 CRITICAL require_once(): Failed opening required './././config.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 244
 
+2022-04-23T16:28:06+00:00 CRITICAL syntax error, unexpected 'if' (T_IF) in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 213
+
+2022-04-23T16:31:45+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 213
+
