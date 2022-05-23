@@ -1,0 +1,66 @@
+2022-05-19T02:47:08+00:00 CRITICAL Uncaught Error: Call to a member function get_ID() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:105
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): registered('', '', 'registered')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(regist...', 'do_shortcode_ta...', '\n[registered]\n')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[registered]\n')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\text_box.php(100): flatsome_contentfix('\n[registered]\n')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): flatsome_text_box(Array, '\n[registered]\n', 'text_box')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(text_b...', 'do_short in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 105
+
+2022-05-19T03:13:02+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:72
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): registered('', '', 'registered')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(regist...', 'do_shortcode_ta...', '\n[registered]\n')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[registered]\n')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\text_box.php(100): flatsome_contentfix('\n[registered]\n')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): flatsome_text_box(Array, '\n[registered]\n', 'text_box')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(text_b...', 'do_shortcode_ in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 72
+
+2022-05-19T03:33:58+00:00 CRITICAL syntax error, unexpected end of file in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 430
+
+2022-05-19T04:49:14+00:00 CRITICAL Uncaught Error: Call to a member function is_sold_individually() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:225
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): payment('', '', 'payment')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(paymen...', 'do_shortcode_ta...', '\n<p >[payment]\n')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n<p >[payment]\n')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\text_box.php(100): flatsome_contentfix('\n<p >[payment]\n')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): flatsome_text_box(Array, '\n<p >[payment]\n', 'text_box')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(text_b... in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 225
+
+2022-05-19T05:49:32+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function flatsome_woocommerce_loop_add_to_cart_link(), 2 passed in C:\xampp\htdocs\littleandlittle\wp-includes\class-wp-hook.php on line 307 and exactly 3 expected in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\woocommerce\structure-wc-product-box.php:211
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\class-wp-hook.php(307): flatsome_woocommerce_loop_add_to_cart_link('<a href="?add-t...', Object(WC_Product_Simple))
+#1 C:\xampp\htdocs\littleandlittle\wp-includes\plugin.php(189): WP_Hook->apply_filters('<a href="?add-t...', Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php(111): apply_filters('woocommerce_loo...', '<a href="?add-t...', Object(WC_Product_Simple))
+#3 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): registered('', '', 'registered')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback(' in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\woocommerce\structure-wc-product-box.php on line 211
+
+2022-05-19T08:32:47+00:00 CRITICAL Uncaught Error: Call to undefined function get_id() in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:64
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): registered('', '', 'registered')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(regist...', 'do_shortcode_ta...', '\n[registered]\n')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[registered]\n')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\text_box.php(100): flatsome_contentfix('\n[registered]\n')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): flatsome_text_box(Array, '\n[registered]\n', 'text_box')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(text_b...', 'do_shortcode_ta. in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 64
+
+2022-05-19T09:01:07+00:00 CRITICAL Uncaught Error: Call to undefined function product_ID() in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:64
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): registered('', '', 'registered')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(regist...', 'do_shortcode_ta...', '\n[registered]\n')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[registered]\n')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\text_box.php(100): flatsome_contentfix('\n[registered]\n')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): flatsome_text_box(Array, '\n[registered]\n', 'text_box')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(text_b...', 'do_shortcode in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 64
+

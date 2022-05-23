@@ -47,9 +47,11 @@ do_action( 'woocommerce_before_cart' ); ?>
 	<?php do_action( 'woocommerce_before_cart_table' ); ?>
 
 	<table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents" cellspacing="0">
+		<!-- Trang giỏ hàng -->
 		<thead>
+			<!-- Tựa đề -->
 			<tr>
-				<th class="product-name" colspan="3"><?php esc_html_e( 'Product', 'woocommerce' ); ?></th>
+				<th class="product-name" colspan="2"><?php esc_html_e( 'Product', 'woocommerce' ); ?></th>
 				<th class="product-price"><?php esc_html_e( 'Price', 'woocommerce' ); ?></th>
 				<th class="product-quantity"><?php esc_html_e( 'Quantity', 'woocommerce' ); ?></th>
 				<th class="product-subtotal"><?php esc_html_e( 'Subtotal', 'woocommerce' ); ?></th>
@@ -66,6 +68,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 				if ( $_product && $_product->exists() && $cart_item['quantity'] > 0 && apply_filters( 'woocommerce_cart_item_visible', true, $cart_item, $cart_item_key ) ) {
 					$product_permalink = apply_filters( 'woocommerce_cart_item_permalink', $_product->is_visible() ? $_product->get_permalink( $cart_item ) : '', $cart_item, $cart_item_key );
 					?>
+					<!-- List danh sách trong giỏ hàng -->
 					<tr class="woocommerce-cart-form__cart-item <?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
 
 						<td class="product-remove">
@@ -84,17 +87,17 @@ do_action( 'woocommerce_before_cart' ); ?>
 							?>
 						</td>
 
-						<td class="product-thumbnail">
-						<?php
-						$thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
+						<!-- <td class="product-thumbnail">
+							<?php
+							$thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
 
-						if ( ! $product_permalink ) {
-							echo $thumbnail; // PHPCS: XSS ok.
-						} else {
-							printf( '<a href="%s">%s</a>', esc_url( $product_permalink ), $thumbnail ); // PHPCS: XSS ok.
-						}
-						?>
-						</td>
+							if ( ! $product_permalink ) {
+								echo $thumbnail; // PHPCS: XSS ok.
+							} else {
+								printf( '<a href="%s">%s</a>', esc_url( $product_permalink ), $thumbnail ); // PHPCS: XSS ok.
+							}
+							?>
+						</td> -->
 
 						<td class="product-name" data-title="<?php esc_attr_e( 'Product', 'woocommerce' ); ?>">
 						<?php
@@ -153,7 +156,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 						</td>
 
 						<td class="product-subtotal" data-title="<?php esc_attr_e( 'Subtotal', 'woocommerce' ); ?>">
-							<?php
+							<?php	
 								echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key ); // PHPCS: XSS ok.
 							?>
 						</td>
@@ -199,15 +202,6 @@ do_action( 'woocommerce_before_cart' ); ?>
 			 */
 			do_action( 'woocommerce_cart_collaterals' );
 		?>
-		<?php if ( wc_coupons_enabled() ) { ?>
-		<form class="checkout_coupon mb-0" method="post">
-			<div class="coupon">
-				<h3 class="widget-title"><?php echo get_flatsome_icon( 'icon-tag' ); ?> <?php esc_html_e( 'Coupon', 'woocommerce' ); ?></h3><input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="<?php esc_attr_e( 'Coupon code', 'woocommerce' ); ?>" /> <input type="submit" class="is-form expand" name="apply_coupon" value="<?php esc_attr_e( 'Apply coupon', 'woocommerce' ); ?>" />
-				<?php do_action( 'woocommerce_cart_coupon' ); ?>
-			</div>
-		</form>
-		<?php } ?>
-		<?php do_action( 'flatsome_cart_sidebar' ); ?>
 	</div>
 
 	<?php flatsome_sticky_column_close( 'cart_sticky_sidebar' ); ?>

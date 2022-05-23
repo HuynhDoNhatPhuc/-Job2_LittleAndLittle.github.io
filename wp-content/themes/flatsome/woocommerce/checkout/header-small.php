@@ -14,8 +14,8 @@ function flatsome_checkout_breadcrumb_class( $endpoint ) {
 
 $steps = get_theme_mod( 'cart_steps_numbers', 0 );
 ?>
-
-<nav class="breadcrumbs flex-row flex-row-start checkout-breadcrumbs text-left medium-text-center is-large <?php echo get_theme_mod( 'cart_steps_case', 'uppercase' ); ?>">
+<!-- Header nhỏ thanh toán -->
+<nav style="display: none;" class="breadcrumbs flex-row flex-row-start checkout-breadcrumbs text-left medium-text-center is-large <?php echo get_theme_mod( 'cart_steps_case', 'uppercase' ); ?>">
 	<i class="icon-lock op-5"></i>
 	<a href="<?php echo esc_url( wc_get_cart_url() ); ?>" class="<?php echo flatsome_checkout_breadcrumb_class( 'cart' ); ?>">
 		<?php if ( $steps ) echo '<span class="breadcrumb-step hide-for-small">1</span>'; ?>

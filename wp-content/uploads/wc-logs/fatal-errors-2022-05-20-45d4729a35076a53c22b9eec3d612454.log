@@ -1,0 +1,35 @@
+2022-05-20T02:38:57+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_the_ID() in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:65
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): registered('', '', 'registered')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(regist...', 'do_shortcode_ta...', '\n[registered]\n')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[registered]\n')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\text_box.php(100): flatsome_contentfix('\n[registered]\n')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): flatsome_text_box(Array, '\n[registered]\n', 'text_box')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(text_b.. in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 65
+
+2022-05-20T02:39:11+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_the_id() in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:65
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): registered('', '', 'registered')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(regist...', 'do_shortcode_ta...', '\n[registered]\n')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[registered]\n')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\text_box.php(100): flatsome_contentfix('\n[registered]\n')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): flatsome_text_box(Array, '\n[registered]\n', 'text_box')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(text_b.. in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 65
+
+2022-05-20T02:43:24+00:00 CRITICAL Uncaught Error: Call to undefined function get_product_id() in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:65
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): registered('', '', 'registered')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(regist...', 'do_shortcode_ta...', '\n[registered]\n')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[registered]\n')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\text_box.php(100): flatsome_contentfix('\n[registered]\n')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): flatsome_text_box(Array, '\n[registered]\n', 'text_box')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(text_b...', 'do_short in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 65
+
+2022-05-20T06:46:38+00:00 CRITICAL syntax error, unexpected '}', expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 469
+

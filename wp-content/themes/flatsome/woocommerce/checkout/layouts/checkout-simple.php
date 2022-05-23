@@ -20,11 +20,12 @@
 		<div id="content" role="main">
 			<div class="container">
 				<?php while ( have_posts() ) : the_post(); ?>
-
+					
 					<div class="cart-header text-left medium-text-center">
 						<?php get_template_part( 'template-parts/header/partials/element', 'logo' ); ?>
 						<?php wc_get_template( 'checkout/header-small.php' ); ?>
 					</div>
+					<!-- Trang chi tiết đơn hàng cần thanh toán -->
 					<?php wc_print_notices(); ?>
 					<?php the_content(); ?>
 

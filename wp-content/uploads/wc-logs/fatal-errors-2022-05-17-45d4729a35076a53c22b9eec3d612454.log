@@ -1,0 +1,6 @@
+2022-05-17T02:51:58+00:00 CRITICAL Cannot redeclare woocommerce_header_add_to_cartplus_fragment() (previously declared in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:20) in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 122
+
+2022-05-17T02:52:03+00:00 CRITICAL Cannot redeclare woocommerce_header_add_to_cartplus_fragment() (previously declared in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:20) in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 122
+
+2022-05-17T02:52:32+00:00 CRITICAL Cannot redeclare woocommerce_header_add_to_cartplus_fragment() (previously declared in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:20) in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 122
+

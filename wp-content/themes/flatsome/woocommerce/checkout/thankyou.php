@@ -23,7 +23,6 @@ defined( 'ABSPATH' ) || exit;
 	<?php if ( $order ) :
 
 		do_action( 'woocommerce_before_thankyou', $order->get_id() ); ?>
-
 		<?php if ( $order->has_status( 'failed' ) ) : ?>
 		<div class="large-12 col order-failed">
 			<p class="woocommerce-notice woocommerce-notice--error woocommerce-thankyou-order-failed"><?php esc_html_e( 'Unfortunately your order cannot be processed as the originating bank/merchant has declined your transaction. Please attempt your purchase again.', 'woocommerce' ); ?></p>
@@ -36,23 +35,22 @@ defined( 'ABSPATH' ) || exit;
 			</p>
 		</div>
 
-		<?php else : ?>
-    <div class="large-7 col">
+	<?php else : ?>
+		<!-- <div class="large-7 col">
 
-    <?php
-    $get_payment_method = $order->get_payment_method();
-    $get_order_id       = $order->get_id();
-    ?>
-    <?php do_action( 'woocommerce_thankyou_' . $get_payment_method, $get_order_id ); ?>
-    <?php do_action( 'woocommerce_thankyou', $get_order_id ); ?>
+			<?php
+			$get_payment_method = $order->get_payment_method();
+			$get_order_id       = $order->get_id();
+			?>
+			<?php do_action( 'woocommerce_thankyou_' . $get_payment_method, $get_order_id ); ?>
+			<?php do_action( 'woocommerce_thankyou', $get_order_id ); ?>
 
-    </div>
+		</div> -->
 
 		<div class="large-5 col">
 			<div class="is-well col-inner entry-content">
-				<p class="success-color woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received"><strong><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', esc_html__( 'Thank you. Your order has been received.', 'woocommerce' ), $order ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></strong></p>
-
-				<ul class="woocommerce-order-overview woocommerce-thankyou-order-details order_details">
+				
+				<ul class="woocommerce-order-overview woocommerce-thankyou-order-details order_details" style="list-style: none;text-align: start;">
 
 					<li class="woocommerce-order-overview__order order">
 						<?php esc_html_e( 'Order number:', 'woocommerce' ); ?>
@@ -80,23 +78,23 @@ defined( 'ABSPATH' ) || exit;
 					$payment_method_title = $order->get_payment_method_title();
 					if ( $payment_method_title ) :
 					?>
-						<li class="woocommerce-order-overview__payment-method method">
-							<?php esc_html_e( 'Payment method:', 'woocommerce' ); ?>
-							<strong><?php echo wp_kses_post( $payment_method_title ); ?></strong>
-						</li>
+					<li class="woocommerce-order-overview__payment-method method">
+						<?php esc_html_e( 'Payment method:', 'woocommerce' ); ?>
+						<strong><?php echo wp_kses_post( $payment_method_title ); ?></strong>
+					</li>
 					<?php endif; ?>
-
+					<p style="text-align: center; margin: 10px 0; color: #44C4A1;">[icon name="check-circle" prefix="fas"]</p>	
 				</ul>
 
 				<div class="clear"></div>
 			</div>
 		</div>
 
-		<?php endif; ?>
+	<?php endif; ?>
 
 	<?php else : ?>
 
-		<p class="woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', esc_html__( 'Thank you. Your order has been received.', 'woocommerce' ), null ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+		<p class="woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received" style="margin: 16px; "><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', esc_html__( 'Thank you. Your order has been received.', 'woocommerce' ), null ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 
 	<?php endif; ?>
 

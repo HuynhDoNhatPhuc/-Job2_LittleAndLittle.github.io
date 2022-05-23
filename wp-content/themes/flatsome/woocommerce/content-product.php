@@ -42,12 +42,12 @@ $classes[] = 'has-hover';
 if ( $out_of_stock ) $classes[] = 'out-of-stock';
 
 ?>
-
+<!-- danh sách sản phẩm -->
 <div <?php fl_woocommerce_version_check( '3.4.0' ) ? wc_product_class( $classes, $product ) : post_class( $classes ); ?>>
 	<div class="col-inner">
 	<?php do_action( 'woocommerce_before_shop_loop_item' ); ?>
 	<div class="product-small box <?php echo flatsome_product_box_class(); ?>">
-		<div class="box-image">
+		<!-- <div class="box-image">
 			<div class="<?php echo flatsome_product_box_image_class(); ?>">
 				<a href="<?php echo get_the_permalink(); ?>">
 					<?php
@@ -70,8 +70,8 @@ if ( $out_of_stock ) $classes[] = 'out-of-stock';
 				<?php do_action( 'flatsome_product_box_actions' ); ?>
 			</div>
 			<?php if ( $out_of_stock ) { ?><div class="out-of-stock-label"><?php _e( 'Out of stock', 'woocommerce' ); ?></div><?php } ?>
-		</div>
-
+		</div> -->
+		
 		<div class="box-text <?php echo flatsome_product_box_text_class(); ?>">
 			<?php
 				do_action( 'woocommerce_before_shop_loop_item_title' );
@@ -81,10 +81,10 @@ if ( $out_of_stock ) $classes[] = 'out-of-stock';
 				echo '</div>';
 
 
-				echo '<div class="price-wrapper">';
-				do_action( 'woocommerce_after_shop_loop_item_title' );
-				echo '</div>';
-
+				// echo '<div class="price-wrapper">';
+				// do_action( 'woocommerce_after_shop_loop_item_title' );
+				// echo '</div>';
+				
 				do_action( 'flatsome_product_box_after' );
 
 			?>

@@ -61,18 +61,15 @@ if ( flatsome_option( 'facebook_login_checkout' ) && get_option( 'woocommerce_en
 <form name="checkout" method="post" class="checkout woocommerce-checkout <?php echo esc_attr( $wrapper_classes ); ?>" action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data">
 
 	<div class="row pt-0 <?php echo esc_attr( $row_classes ); ?>">
+		<!-- Thông tin khách hàng để thanh toán -->
 		<div class="large-7 col  <?php echo esc_attr( $main_classes ); ?>">
 			<?php if ( $checkout->get_checkout_fields() ) : ?>
 
 				<?php do_action( 'woocommerce_checkout_before_customer_details' ); ?>
-
+				
 				<div id="customer_details">
 					<div class="clear">
 						<?php do_action( 'woocommerce_checkout_billing' ); ?>
-					</div>
-
-					<div class="clear">
-						<?php do_action( 'woocommerce_checkout_shipping' ); ?>
 					</div>
 				</div>
 
@@ -82,6 +79,7 @@ if ( flatsome_option( 'facebook_login_checkout' ) && get_option( 'woocommerce_en
 
 		</div>
 
+		<!-- Hóa đơn cần thanh toán -->
 		<div class="large-5 col">
 			<?php flatsome_sticky_column_open( 'checkout_sticky_sidebar' ); ?>
 

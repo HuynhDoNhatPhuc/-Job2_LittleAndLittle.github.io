@@ -41,7 +41,7 @@ $classes = array( 'product-category', 'col' );
 		<?php do_action( 'woocommerce_before_subcategory', $category ); ?>
 
 		<div class="box box-<?php echo $cat_style; ?>  <?php echo $text_pos; ?> <?php echo $color; ?>">
-			<div class="box-image">
+			<!-- <div class="box-image">
 				<?php
 				/**
 				 * woocommerce_before_subcategory_title hook
@@ -54,10 +54,10 @@ $classes = array( 'product-category', 'col' );
 					<div class="overlay"></div><?php } ?>
 				<?php if ( $cat_style == 'shade' ) { ?>
 					<div class="shade"></div><?php } ?>
-			</div>
+			</div> -->
 			<div class="box-text text-center">
 				<div class="box-text-inner">
-					<h5 class="uppercase header-title">
+					<h5 class="uppercase header-title">hello
 						<?php echo $category->name; ?>
 					</h5>
 					<?php if ( get_theme_mod( 'category_show_count', 1 ) ) : ?>

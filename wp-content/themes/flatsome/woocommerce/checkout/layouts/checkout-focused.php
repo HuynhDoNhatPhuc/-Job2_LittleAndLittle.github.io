@@ -28,7 +28,7 @@
 		<div class="focused-checkout-header pb">
 			<?php wc_get_template( 'checkout/header.php' ); ?>
 		</div>
-
+		
 		<div class="row">
 			<div id="content" class="large-12 col" role="main">
 

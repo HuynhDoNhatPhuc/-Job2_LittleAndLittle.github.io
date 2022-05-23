@@ -1,0 +1,184 @@
+2022-05-11T05:20:24+00:00 CRITICAL syntax error, unexpected '}', expecting end of file in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 157
+
+2022-05-11T12:23:21+07:00 CRITICAL Uncaught Error: Call to a member function get_cart_total() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:134
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): vnpay('', '', 'vnpay')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(vnpay)...', 'do_shortcode_ta...', '\n[vnpay]\n')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[vnpay]\n')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\text_box.php(100): flatsome_contentfix('\n[vnpay]\n')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): flatsome_text_box(Array, '\n[vnpay]\n', 'text_box')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(text_b...', 'do_shortcode_ta...', '\n[ux_im in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 134
+
+2022-05-11T07:28:02+00:00 CRITICAL Uncaught Error: Call to a member function is_sold_individually() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:186
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): payment('', '', 'payment')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(paymen...', 'do_shortcode_ta...', '\n<p >[payment]\n')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n<p >[payment]\n')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\text_box.php(100): flatsome_contentfix('\n<p >[payment]\n')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): flatsome_text_box(Array, '\n<p >[payment]\n', 'text_box')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(text_b... in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 186
+
+2022-05-11T07:38:29+00:00 CRITICAL syntax error, unexpected '}' in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 89
+
+2022-05-11T08:12:05+00:00 CRITICAL syntax error, unexpected '<' in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 198
+
+2022-05-11T08:20:07+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_total() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:174
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): payment('', '', 'payment')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(paymen...', 'do_shortcode_ta...', '\n<p >[payment]\n')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n<p >[payment]\n')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\text_box.php(100): flatsome_contentfix('\n<p >[payment]\n')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): flatsome_text_box(Array, '\n<p >[payment]\n', 'text_box')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(text_b...', 'do in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 174
+
+2022-05-11T08:21:13+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_total() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:174
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): payment('', '', 'payment')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(paymen...', 'do_shortcode_ta...', '\n<p >[payment]\n')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n<p >[payment]\n')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\text_box.php(100): flatsome_contentfix('\n<p >[payment]\n')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): flatsome_text_box(Array, '\n<p >[payment]\n', 'text_box')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(text_b...', 'do in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 174
+
+2022-05-11T08:25:24+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on null in C:\xampp\htdocs\littleandlittle\wp-content\plugins\woocommerce\includes\class-wc-cart.php:2012
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php(175): WC_Cart->get_product_subtotal(NULL, NULL)
+#1 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): payment('', '', 'payment')
+#2 [internal function]: do_shortcode_tag(Array)
+#3 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(paymen...', 'do_shortcode_ta...', '\n<p >[payment]\n')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n<p >[payment]\n')
+#5 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\text_box.php(100): flatsome_contentfix('\n<p >[payment]\n')
+#6 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): flatsome_text_box(Array, '\n<p >[payment]\n', 'text_box')
+#7 [internal function]: do_s in C:\xampp\htdocs\littleandlittle\wp-content\plugins\woocommerce\includes\class-wc-cart.php on line 2012
+
+2022-05-11T15:58:51+07:00 CRITICAL Uncaught Error: Call to a member function get_cart_total() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:134
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): vnpay('', '', 'vnpay')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(vnpay)...', 'do_shortcode_ta...', '\n[vnpay]\n')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[vnpay]\n')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\text_box.php(100): flatsome_contentfix('\n[vnpay]\n')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): flatsome_text_box(Array, '\n[vnpay]\n', 'text_box')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(text_b...', 'do_shortcode_ta...', '\n[ux_im in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 134
+
+2022-05-11T16:00:14+07:00 CRITICAL Uncaught Error: Call to a member function get_cart_total() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:134
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): vnpay('', '', 'vnpay')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(vnpay)...', 'do_shortcode_ta...', '\n[vnpay]\n')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[vnpay]\n')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\text_box.php(100): flatsome_contentfix('\n[vnpay]\n')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): flatsome_text_box(Array, '\n[vnpay]\n', 'text_box')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(text_b...', 'do_shortcode_ta...', '\n[ux_im in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 134
+
+2022-05-11T16:04:14+07:00 CRITICAL Uncaught Error: Call to a member function get_cart_total() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:134
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): vnpay('', '', 'vnpay')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(vnpay)...', 'do_shortcode_ta...', '\n[vnpay]\n')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[vnpay]\n')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\text_box.php(100): flatsome_contentfix('\n[vnpay]\n')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): flatsome_text_box(Array, '\n[vnpay]\n', 'text_box')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(text_b...', 'do_shortcode_ta...', '\n[ux_im in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 134
+
+2022-05-11T16:27:12+07:00 CRITICAL Uncaught Error: Call to a member function get_cart_total() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:134
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): vnpay('', '', 'vnpay')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(vnpay)...', 'do_shortcode_ta...', '\n[vnpay]\n')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[vnpay]\n')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\text_box.php(100): flatsome_contentfix('\n[vnpay]\n')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): flatsome_text_box(Array, '\n[vnpay]\n', 'text_box')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(text_b...', 'do_shortcode_ta...', '\n[ux_im in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 134
+
+2022-05-11T09:43:48+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\woocommerce\cart\cart.php on line 160
+
+2022-05-11T17:24:29+07:00 CRITICAL Uncaught Error: Call to a member function get_cart_total() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:135
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): vnpay('', '', 'vnpay')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(vnpay)...', 'do_shortcode_ta...', '\n[vnpay]\n')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[vnpay]\n')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\text_box.php(100): flatsome_contentfix('\n[vnpay]\n')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): flatsome_text_box(Array, '\n[vnpay]\n', 'text_box')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(text_b...', 'do_shortcode_ta...', '\n[ux_im in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 135
+
+2022-05-11T17:26:08+07:00 CRITICAL Uncaught Error: Call to a member function get_cart_total() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:135
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): vnpay('', '', 'vnpay')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(vnpay)...', 'do_shortcode_ta...', '\n[vnpay]\n')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[vnpay]\n')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\text_box.php(100): flatsome_contentfix('\n[vnpay]\n')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): flatsome_text_box(Array, '\n[vnpay]\n', 'text_box')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(text_b...', 'do_shortcode_ta...', '\n[ux_im in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 135
+
+2022-05-11T17:27:27+07:00 CRITICAL Uncaught Error: Call to a member function get_cart_total() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:135
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): vnpay('', '', 'vnpay')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(vnpay)...', 'do_shortcode_ta...', '\n[vnpay]\n')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[vnpay]\n')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\text_box.php(100): flatsome_contentfix('\n[vnpay]\n')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): flatsome_text_box(Array, '\n[vnpay]\n', 'text_box')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(text_b...', 'do_shortcode_ta...', '\n[ux_im in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 135
+
+2022-05-11T17:30:00+07:00 CRITICAL Uncaught Error: Call to a member function get_cart_total() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:135
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): vnpay('', '', 'vnpay')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(vnpay)...', 'do_shortcode_ta...', '\n[vnpay]\n')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[vnpay]\n')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\text_box.php(100): flatsome_contentfix('\n[vnpay]\n')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): flatsome_text_box(Array, '\n[vnpay]\n', 'text_box')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(text_b...', 'do_shortcode_ta...', '\n[ux_im in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 135
+
+2022-05-11T17:30:39+07:00 CRITICAL Uncaught Error: Call to a member function get_cart_total() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:135
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): vnpay('', '', 'vnpay')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(vnpay)...', 'do_shortcode_ta...', '\n[vnpay]\n')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[vnpay]\n')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\text_box.php(100): flatsome_contentfix('\n[vnpay]\n')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): flatsome_text_box(Array, '\n[vnpay]\n', 'text_box')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(text_b...', 'do_shortcode_ta...', '\n[ux_im in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 135
+
+2022-05-11T10:39:55+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_total() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:174
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): payment('', '', 'payment')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(paymen...', 'do_shortcode_ta...', '\n<p >[payment]\n')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n<p >[payment]\n')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\text_box.php(100): flatsome_contentfix('\n<p >[payment]\n')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): flatsome_text_box(Array, '\n<p >[payment]\n', 'text_box')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(text_b...', 'do in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 174
+
+2022-05-11T10:40:05+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_total() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:174
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): payment('', '', 'payment')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(paymen...', 'do_shortcode_ta...', '\n<p >[payment]\n')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n<p >[payment]\n')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\text_box.php(100): flatsome_contentfix('\n<p >[payment]\n')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): flatsome_text_box(Array, '\n<p >[payment]\n', 'text_box')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(text_b...', 'do in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 174
+

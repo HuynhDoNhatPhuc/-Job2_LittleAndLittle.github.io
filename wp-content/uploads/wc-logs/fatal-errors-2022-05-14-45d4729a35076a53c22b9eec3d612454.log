@@ -1,0 +1,22 @@
+2022-05-14T10:32:43+07:00 CRITICAL Uncaught Error: Call to a member function get_checkout_fields() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:196
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): vnpay('', '', 'vnpay')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(vnpay)...', 'do_shortcode_ta...', '\n[vnpay]\n')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[vnpay]\n')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\text_box.php(100): flatsome_contentfix('\n[vnpay]\n')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): flatsome_text_box(Array, '\n[vnpay]\n', 'text_box')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(text_b...', 'do_shortcode_ta...', '\n[ in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 196
+
+2022-05-14T10:35:11+07:00 CRITICAL Uncaught Error: Call to a member function get_checkout_fields() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:197
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): vnpay('', '', 'vnpay')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(vnpay)...', 'do_shortcode_ta...', '\n[vnpay]\n')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[vnpay]\n')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\text_box.php(100): flatsome_contentfix('\n[vnpay]\n')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): flatsome_text_box(Array, '\n[vnpay]\n', 'text_box')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(text_b...', 'do_shortcode_ta...', '\n[ in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 197
+

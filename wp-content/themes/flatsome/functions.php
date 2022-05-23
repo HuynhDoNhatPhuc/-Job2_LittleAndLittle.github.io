@@ -12,320 +12,214 @@ require get_template_directory() . '/inc/init.php';
  * Learn more here: http://codex.wordpress.org/Child_Themes
  */
 
- /** 
-* Begin booking form 
-*/
+
+
+
+// Form đặt vé
 function registered(){
 	?>
+
 <html>
-<head>	
+<head>
+
 </head>
 <body>
 <form action="./thanh-toan/" method="GET">
+	
 	<div id="responsive-forms" class="clearfixs">
 		<div class="form-row">
 			<div class="column-full">
-				<select name="packages">
-					<option value="Gói Gia Đình">Gói Gia Đình</option>
-					<option value="Gói Gia Đình">Gói cặp đôi</option>
+				<!-- Hiển thị sản phẩm -->
+				<select name="add-to-cart">			
+					<?php 
+					 $args = array( 
+						 'post_type' => 'product'
+						); 
+					 $getposts = new WP_query( $args);
+					 global $wp_query; $wp_query->in_the_loop = true; 
+					 while ($getposts->have_posts()) : $getposts->the_post(); 
+					 global $product;
+					 $product->get_id();
+					?>
+						<option value="<?php echo esc_attr($product->id); ?>">
+							
+							<a><?php the_title();?> <?php echo wc_get_stock_html( $product );?></a>
+							
+						</option>
+					<?php endwhile;  wp_reset_postdata(); ?>
 				</select>
 			</div>
 		</div>
 		<div class="form-row">
 			<div class="column-halff">
-				<input  type="text" name="number" value="2" >
+				<input type="number" size="4" class="input-text qty" title="Số lượng vé" value="1" id="quantity" name="quantity" min="1" step="1">
 			</div> 
 			<div class="column-halff">
 				<input type="date" id="date" name="date">
 			</div>
-		</div>
+		</div> 
 		<div class="form-row">
 			<div class="column-full">
-				<input type="text" name="fullname" value="NHAT PHUC">
+				<input type="text" name="fullname" placeholder="Jesse">
 			</div>
 		</div>
 		<div class="form-row">
 			<div class="column-full">
-				<input type="tel" name="tel" value="0327801523" >
+				<input type="tel" name="tel" placeholder="012345678" >
 			</div>
 		</div>
 		<div class="form-row">
 			<div class="column-full">
-				<input type="email" name="email" value="hdnp5237@gmail.com">
+				<input type="email" name="email" placeholder="abc@gmail.com">
 			</div>
 		</div>
-		
-		<button class="button" type="submit">Đặt vé</button>
+
+		<button type="submit" class="single_add_to_cart_button button alt">Đặt vé</button>
 		
 	</div>
 </form>
 </body>
 </html>
 		<?php
+		
 }
 
 add_shortcode('registered','registered');
-/** 
-* End booking form 
-*/
 
 
-/** Thanh toán bằng VNPAY */
-function vnpay(){
-
-	?>
-	<!DOCTYPE html>
-	<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <!-- Bootstrap core CSS -->
-        <link href="./././vnpay_php/assets/bootstrap.min.css" rel="stylesheet"/>
-        <!-- Custom styles for this template -->
-        <link href="./././vnpay_php/assets/jumbotron-narrow.css" rel="stylesheet">  
-        <script src="./././vnpay_php/assets/jquery-1.11.3.min.js"></script>
-    </head>
-
-    <body>
-        <?php require_once("./././vnpay_php/config.php"); ?>  
-
-	<form action="../vnpay_php/" id="create_form-payment" method="post">       
-
-		<div class="form-group">
-			<label for="language">Loại hàng hóa</label>
-			<select name="order_type" id="order_type" class="form-control">
-				<option value="topup">Nạp tiền điện thoại</option>
-				<option value="billpayment">Thanh toán hóa đơn</option>
-				<option value="fashion">Thời trang</option>
-				<option value="other">Khác - Xem thêm tại VNPAY</option>
-			</select>
-		</div>
-		<div class="form-group">
-			<label for="order_id">Mã hóa đơn</label>
-			<input class="form-control" id="order_id" name="order_id" type="text" 
-				value="<?php echo date("His") ?>"/>
-		</div>
-		<div class="form-group">
-			<label for="amount">Số tiền</label>
-			<input class="form-control" id="amount" name="amount" type="number" 
-				value="<?php if(isset($_GET["number"])) {echo 90000*$_GET["number"];}?>"/>
-		</div>
-		<div class="form-group">
-			<label for="order_desc">Nội dung thanh toán</label>
-			<textarea class="form-control" cols="20" id="order_desc" name="order_desc" rows="2" >TEN KH: <?php if(isset($_GET["fullname"])) { print $_GET["fullname"]; } ?>, SDT: <?php if(isset($_GET["tel"])) { print $_GET["tel"];}?>, Email: <?php if(isset($_GET["email"])) { print $_GET["email"];}?>
-			</textarea>
-		</div>
-		<div class="form-group">
-			<label for="language">Ngôn ngữ</label>
-			<select name="language" id="language" class="form-control">
-				<option value="vn">Tiếng Việt</option>
-				<option value="en">English</option>
-			</select>
-		</div>
-		
-		<button type="submit" name="redirect" id="redirect" class="btn btn-default">Thanh toán</button>
-
-</form>
-
-    </body>
-</html>
-
-
-	<?php
-}
-add_shortcode('vnpay','vnpay');
-/**  Kết thúc thanh toán bằng VNPAY */
-
-/** Begin handling payment */
-function payment(){
-	?>
-<html>
-<head>
-	<link rel="stylesheet" href="/wp-content/themes/flatsome/style.css">	
-</head>
-<body>
-	<form action="../vnpay_php/" id="create_form" method="post"> 
-		<div id="responsive-forms" class="clearfixs">
-			 <div class="form-row">
-				<div class="column-half">
-					<label >Số tiền thanh toán</label>
-					<input id="amount" name="amount" 
-						value="<?php if(isset($_GET["number"])) {echo 90000*$_GET["number"];}?>">
-				</div>
-			</div>
-			<div class="form-row">
-				<div class="column-halfff">
-					<label >Số lượng vé</label>
-					<input class="column-1" id="order_tickets" name="order_tickets"
-						value="<?php if(isset($_GET["number"])) {echo $_GET["number"];}?>"><p style="color:#000;">vé</p>
-				</div>
-			</div>
-			<div class="form-row">
-				<div class="column-half">
-					<label >Ngày sử dụng</label>
-					<input id="txtexpire" name="txtexpire" 
-						value="<?php if(isset($_GET["date"])) { echo $_GET["date"]; } ?>">
-				</div>
-			</div>
-			<div class="form-row">
-				<div class="column-full">
-					<label >Thông tin liên hệ</label>
-					<input class="column-f" id="txt_billing_fullname" name="txt_billing_fullname" 
-						value="<?php if(isset($_GET["fullname"])) { print $_GET["fullname"]; } ?>">
-				</div>
-			</div>
-			<div class="form-row">
-				<div class="column-full">
-					<label >Điện thoại</label>
-					<input class="column-f" id="txt_billing_mobile" name="txt_billing_mobile"
-						value="<?php if(isset($_GET["tel"])) { print $_GET["tel"];}?>">
-				</div>
-			</div>
-			<div class="form-row">
-				<div class="column-full">
-					<label >Email</label>
-					<input class="column-f" id="txt_billing_email" name="txt_billing_email"
-						value="<?php if(isset($_GET["email"])) { print $_GET["email"];}?>">
-				</div>
-			</div> 
-				
-		</div>
-	</form>
-</body>
-</html>
-	<?php
-}
-add_shortcode('payment','payment');
-
-/** End handling payment  */
-
-/** Xuất số vé */
+// Thanh toán thành công và xuất vé
 function outputticket(){
-	?>
+defined( 'ABSPATH' ) || exit;
+?>
 
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <title>VNPAY RESPONSE</title>
-        <!-- Bootstrap core CSS -->
-        <link href="./././vnpay_php/assets/bootstrap.min.css" rel="stylesheet"/>
-        <!-- Custom styles for this template -->
-        <link href="./././vnpay_php/assets/jumbotron-narrow.css" rel="stylesheet">         
-        <script src="./././vnpay_php/assets/jquery-1.11.3.min.js"></script>
-    </head>
-    <body>
-        <?php
-        require_once("./././vnpay_php/config.php");
-        $vnp_SecureHash = $_GET['vnp_SecureHash'];
-        $inputData = array();
-        foreach ($_GET as $key => $value) {
-            if (substr($key, 0, 4) == "vnp_") {
-                $inputData[$key] = $value;
-            }
-        }
-        
-        unset($inputData['vnp_SecureHash']);
-        ksort($inputData);
-        $i = 0;
-        $hashData = "";
-        foreach ($inputData as $key => $value) {
-            if ($i == 1) {
-                $hashData = $hashData . '&' . urlencode($key) . "=" . urlencode($value);
-            } else {
-                $hashData = $hashData . urlencode($key) . "=" . urlencode($value);
-                $i = 1;
-            }
-        }
 
-        $secureHash = hash_hmac('sha512', $hashData, $vnp_HashSecret);
-        ?>
-        <!--Begin display -->
-        <div class="container">
-            <div class="table-responsive">
-				<div class="form-group">
-					<img class="alignnone wp-image-763" src="../wp-content/uploads/2022/04/image-3.png" alt="" width="100" height="106" style="padding: 10px 0; margin-top: 4px;" />
+<div class="row">
+
+	<?php if ( $order ) :
+
+		do_action( 'woocommerce_before_thankyou', $order->get_id() ); ?>
+		<?php if ( $order->has_status( 'failed' ) ) : ?>
+		<div class="large-12 col order-failed">
+			<p class="woocommerce-notice woocommerce-notice--error woocommerce-thankyou-order-failed"><?php esc_html_e( 'Unfortunately your order cannot be processed as the originating bank/merchant has declined your transaction. Please attempt your purchase again.', 'woocommerce' ); ?></p>
+
+			<p class="woocommerce-notice woocommerce-notice--error woocommerce-thankyou-order-failed-actions">
+				<a href="<?php echo esc_url( $order->get_checkout_payment_url() ); ?>" class="button pay"><?php esc_html_e( 'Pay', 'woocommerce' ); ?></a>
+				<?php if ( is_user_logged_in() ) : ?>
+					<a href="<?php echo esc_url( wc_get_page_permalink( 'myaccount' ) ); ?>" class="button pay"><?php esc_html_e( 'My account', 'woocommerce' ); ?></a>
+				<?php endif; ?>
+			</p>
+		</div>
+
+		<?php else : ?>
+			<div class="large-12 col">
+				<div class="is-well col-inner entry-content">
+					<!-- Thanh toán thành công -->
+					<ul class="woocommerce-order-overview woocommerce-thankyou-order-details order_details" style="list-style: none;text-align: start;">
+
+						<li class="woocommerce-order-overview__order order">
+							<?php esc_html_e( 'Order number:', 'woocommerce' ); ?>
+							<strong><?php echo $order->get_order_number(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></strong>
+						</li>
+
+						<li class="woocommerce-order-overview__date date">
+							<?php esc_html_e( 'Date:', 'woocommerce' ); ?>
+							<strong><?php echo wc_format_datetime( $order->get_date_created() ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></strong>
+						</li>
+
+						<?php if ( is_user_logged_in() && $order->get_user_id() === get_current_user_id() && $order->get_billing_email() ) : ?>
+							<li class="woocommerce-order-overview__email email">
+								<?php esc_html_e( 'Email:', 'woocommerce' ); ?>
+								<strong><?php echo $order->get_billing_email(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></strong>
+							</li>
+						<?php endif; ?>
+
+						<li class="woocommerce-order-overview__total total">
+							<?php esc_html_e( 'Total:', 'woocommerce' ); ?>
+							<strong><?php echo $order->get_formatted_order_total(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></strong>
+						</li>
+
+						<?php
+						$payment_method_title = $order->get_payment_method_title();
+						if ( $payment_method_title ) :
+						?>
+						<li class="woocommerce-order-overview__payment-method method">
+							<?php esc_html_e( 'Payment method:', 'woocommerce' ); ?>
+							<strong><?php echo wp_kses_post( $payment_method_title ); ?></strong>
+						</li>
+						<?php endif; ?>
+						<p style="text-align: center; margin: 10px 0; color: #44C4A1;">[icon name="check-circle" prefix="fas"]</p>	
+					</ul>
+
+					<div class="clear"></div>
 				</div>
-                <div class="form-group">
-                    <label>Mã đơn hàng: <?php echo $_GET['vnp_TxnRef'] ?></label>
-                </div>    
-                <div class="form-group">
-                    <label>Số tiền: <?php echo $_GET['vnp_Amount'] ?></label>
-                </div>
-                <div class="form-group">
-                    <label>Nội dung thanh toán: <?php echo $_GET['vnp_OrderInfo'] ?></label>
-                </div> 
-                <div class="form-group">
-                    <label>Mã phản hồi: <?php echo $_GET['vnp_ResponseCode'] ?></label>
-                </div> 
-                <div class="form-group">
-                    <label>Mã GD Tại VNPAY: <?php echo $_GET['vnp_TransactionNo'] ?></label>
-                </div> 
-                <div class="form-group">
-                    <label>Mã Ngân hàng: <?php echo $_GET['vnp_BankCode'] ?></label>
-                </div>
-                <div class="form-group">
-                    <label>Kết quả: 
-                        <?php
-                        if ($secureHash == $vnp_SecureHash) {
-                            if ($_GET['vnp_ResponseCode'] == '00') {
-								$order_id = $_GET['vnp_TxnRef'];
-                                $money = $_GET['vnp_Amount']/100;
-                                $note = $_GET['vnp_OrderInfo'];
-                                $vnp_response_code = $_GET['vnp_ResponseCode'];
-                                $code_vnpay = $_GET['vnp_TransactionNo'];
-                                $code_bank = $_GET['vnp_BankCode'];
-								$time = $_GET['vnp_PayDate'];
-                                $date_time = substr($time, 0, 4) . '-' . substr($time, 4, 2) . '-' . substr($time, 6, 2) . ' ' . substr($time, 8, 2) . ' ' . substr($time, 10, 2) . ' ' . substr($time, 12, 2);
-                                
-								
-								$conn = mysqli_connect("localhost", "root", "", "littleandlittle");
-                                $taikhoan = $_SESSION['tk'];
-                                $query = mysqli_query($conn, "SELECT * FROM payments WHERE order_id = '$order_id'");
-                                $rowcount = mysqli_num_rows($query);
-                                if ($rowcount > 0) {
-                                    $sql = "UPDATE payments SET order_id = '$order_id', money = '$money', noi_dung_thanh_toan = '$note', vnp_response_code = '$vnp_response_code', code_vnpay = '$code_vnpay', code_bank = '$code_bank' WHERE order_id = '$order_id'";
-                                   
-                                    mysqli_query($conn, $sql);
-                                } else {
-                                    $sql = "INSERT INTO payments(order_id, thanh_vien, money, noi_dung_thanh_toan, vnp_response_code, code_vnpay, code_bank, time) 
-									VALUES ('$order_id', '$taikhoan', '$money', '$note', '$vnp_response_code', '$code_vnpay', '$code_bank','$date_time')";
-                                    mysqli_query($conn, $sql);
-                                }
+			</div>
+		<?php endif; ?>
+	<?php else : ?>
 
+		<p class="woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received" style="margin: 16px; ">
+			<img class="alignnone wp-image-763" src="../wp-content/uploads/2022/04/image-3.png" alt="" width="100"  style="padding: 10px 0; margin-top: 4px;" />
+			</br>
 
-                                echo "<span style='color:blue'>GD Thanh cong</span>
-								
-								";
-                            } else {
-                                echo "<span style='color:red'>GD Khong thanh cong</span>";
-                            }
-                        } else {
-                            echo "<span style='color:red'>Chu ky khong hop le</span>";
-                        }
-                        ?>
+			<label style="text-align: center; margin: 0;"><?php the_title();?></label>
+			</br>
 
-                    </label>
-                </div> 
-				<p style="text-align: center; margin: 10px 0; color: #44C4A1;">[icon name="check-circle" prefix="fas"]</p>
-            </div>
-        </div>  
-    </body>
-</html>
+			<label style="text-align: center; margin: 0; color: #FFC226;">VÉ CỔNG</label>
+			</br>
 
+			<label style="text-align: center; margin: 0; font-size: 24px; font-weight: 700;">---</label>
+			</br>
 
+			<label >Ngày sử dụng: <?php if(isset($_GET["date"])) { echo $_GET["date"]; } ?></label>
+			</br>
+			
+			<a style="text-align: center; margin-top: 10px; color: #44C4A1;">[icon name="check-circle" prefix="fas"]</a>
+		</p>
+						
+	<?php endif; ?>
 
-	<?php
+</div>
+
+<?php
+
 }
 
 add_shortcode('outputticket','outputticket');
-/** Kết thúc xuất số vé */
+
+
+// Trang Giỏ hàng sẽ được chuyển hướng sang trang Thanh toán.
+function skip_cart_page_redirection_to_checkout() {
+
+    if( is_cart() )
+        wp_redirect( wc_get_checkout_url() );
+}
+add_action('template_redirect', 'skip_cart_page_redirection_to_checkout');
+
+
+// Giỏ hàng sẽ được xóa trước khi sản phẩm khác được thêm vào.
+add_filter( 'woocommerce_add_to_cart_validation', 'remove_cart_item_before_add_to_cart', 20, 3 );
+function remove_cart_item_before_add_to_cart( $passed, $product_id, $quantity ) {
+    if( ! WC()->cart->is_empty())
+        WC()->cart->empty_cart();
+    return $passed;
+}
+
+
+// Sửa nút ĐẶT HÀNG --> Thanh Toán
+add_filter('woocommerce_order_button_text','custom_order_button_text',1);
+function custom_order_button_text($order_button_text) {
+	$order_button_text = 'Thanh Toán';
+	return $order_button_text;
+}
+
+
+// chuyển ra trang thanh toán thành công
+add_action( 'template_redirect', 'woo_custom_redirect_after_purchase' );
+function woo_custom_redirect_after_purchase() {
+	global $wp;
+	if ( is_checkout() && !empty( $wp->query_vars['order-received'] ) ) {
+		wp_redirect( 'http://localhost:8081/littleandlittle/thanh-toan-thanh-cong/' );
+		exit;
+	}
+}
+
+

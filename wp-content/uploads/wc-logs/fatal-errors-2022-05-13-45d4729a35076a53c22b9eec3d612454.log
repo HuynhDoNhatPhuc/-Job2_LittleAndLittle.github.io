@@ -1,0 +1,88 @@
+2022-05-13T03:16:32+00:00 CRITICAL Uncaught Error: Call to a member function is_sold_individually() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:58
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): registered('', '', 'registered')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(regist...', 'do_shortcode_ta...', '\n[registered]\n')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[registered]\n')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\text_box.php(100): flatsome_contentfix('\n[registered]\n')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): flatsome_text_box(Array, '\n[registered]\n', 'text_box')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(text_b.. in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 58
+
+2022-05-13T09:47:45+00:00 CRITICAL Uncaught Error: Call to a member function get_checkout_fields() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:303
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): payment('', '', 'payment')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(paymen...', 'do_shortcode_ta...', '\n<p >[payment]\n')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n<p >[payment]\n')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\text_box.php(100): flatsome_contentfix('\n<p >[payment]\n')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): flatsome_text_box(Array, '\n<p >[payment]\n', 'text_box')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(text_b...' in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 303
+
+2022-05-13T09:54:49+00:00 CRITICAL Uncaught Error: Call to a member function is_registration_enabled() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:267
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): payment('', '', 'payment')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(paymen...', 'do_shortcode_ta...', '\n<p >[payment]\n')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n<p >[payment]\n')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\text_box.php(100): flatsome_contentfix('\n<p >[payment]\n')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): flatsome_text_box(Array, '\n<p >[payment]\n', 'text_box')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(text_b in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 267
+
+2022-05-13T09:55:36+00:00 CRITICAL Uncaught Error: Call to a member function get_checkout_fields() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:348
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): payment('', '', 'payment')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(paymen...', 'do_shortcode_ta...', '\n<p >[payment]\n')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n<p >[payment]\n')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\text_box.php(100): flatsome_contentfix('\n<p >[payment]\n')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): flatsome_text_box(Array, '\n<p >[payment]\n', 'text_box')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(text_b...' in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 348
+
+2022-05-13T09:56:54+00:00 CRITICAL Uncaught Error: Call to a member function get_checkout_fields() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:303
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): payment('', '', 'payment')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(paymen...', 'do_shortcode_ta...', '\n<p >[payment]\n')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n<p >[payment]\n')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\text_box.php(100): flatsome_contentfix('\n<p >[payment]\n')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): flatsome_text_box(Array, '\n<p >[payment]\n', 'text_box')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(text_b...' in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 303
+
+2022-05-13T10:05:52+00:00 CRITICAL Uncaught Error: Call to a member function get_checkout_fields() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:304
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): payment('', '', 'payment')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(paymen...', 'do_shortcode_ta...', '\n<p >[payment]\n')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n<p >[payment]\n')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\text_box.php(100): flatsome_contentfix('\n<p >[payment]\n')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): flatsome_text_box(Array, '\n<p >[payment]\n', 'text_box')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(text_b...' in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 304
+
+2022-05-13T10:07:27+00:00 CRITICAL Uncaught Error: Call to a member function get_checkout_fields() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:305
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): payment('', '', 'payment')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(paymen...', 'do_shortcode_ta...', '\n<p >[payment]\n')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n<p >[payment]\n')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\text_box.php(100): flatsome_contentfix('\n<p >[payment]\n')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): flatsome_text_box(Array, '\n<p >[payment]\n', 'text_box')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(text_b...' in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 305
+
+2022-05-13T10:13:54+00:00 CRITICAL Uncaught Error: Call to a member function is_registration_enabled() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:333
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): payment('', '', 'payment')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(paymen...', 'do_shortcode_ta...', '\n<p >[payment]\n')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n<p >[payment]\n')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\text_box.php(100): flatsome_contentfix('\n<p >[payment]\n')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): flatsome_text_box(Array, '\n<p >[payment]\n', 'text_box')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(text_b in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 333
+
