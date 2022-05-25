@@ -65,7 +65,7 @@ function registered(){
 		</div>
 		<div class="form-row">
 			<div class="column-full">
-				<input type="tel" name="tel" placeholder="012345678" >
+				<input type="tel" name="tel" placeholder="0123456789" >
 			</div>
 		</div>
 		<div class="form-row">
@@ -88,16 +88,17 @@ add_shortcode('registered','registered');
 
 
 // Thanh toán thành công và xuất vé
-function outputticket(){
+function confirmation_order_details(){
 defined( 'ABSPATH' ) || exit;
 ?>
 
 
-<div class="row">
-
+<div class="roww">
+	
 	<?php if ( $order ) :
-
+		
 		do_action( 'woocommerce_before_thankyou', $order->get_id() ); ?>
+		<!-- shortcode này chưa nhận đc -->
 		<?php if ( $order->has_status( 'failed' ) ) : ?>
 		<div class="large-12 col order-failed">
 			<p class="woocommerce-notice woocommerce-notice--error woocommerce-thankyou-order-failed"><?php esc_html_e( 'Unfortunately your order cannot be processed as the originating bank/merchant has declined your transaction. Please attempt your purchase again.', 'woocommerce' ); ?></p>
@@ -111,79 +112,74 @@ defined( 'ABSPATH' ) || exit;
 		</div>
 
 		<?php else : ?>
-			<div class="large-12 col">
-				<div class="is-well col-inner entry-content">
-					<!-- Thanh toán thành công -->
-					<ul class="woocommerce-order-overview woocommerce-thankyou-order-details order_details" style="list-style: none;text-align: start;">
 
-						<li class="woocommerce-order-overview__order order">
-							<?php esc_html_e( 'Order number:', 'woocommerce' ); ?>
-							<strong><?php echo $order->get_order_number(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></strong>
+		<div class="large-5 col">
+			<div class="is-well col-inner entry-content">
+				
+				<ul class="woocommerce-order-overview woocommerce-thankyou-order-details order_details" style="list-style: none;text-align: start;">
+
+					<li class="woocommerce-order-overview__order order">aaaaaaaaaaaa
+						<?php esc_html_e( 'Order number:', 'woocommerce' ); ?>
+						<strong><?php echo $order->get_order_number(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></strong>
+					</li>
+
+					<li class="woocommerce-order-overview__date date">
+						<?php esc_html_e( 'Date:', 'woocommerce' ); ?>
+						<strong><?php echo wc_format_datetime( $order->get_date_created() ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></strong>
+					</li>
+
+					<?php if ( is_user_logged_in() && $order->get_user_id() === get_current_user_id() && $order->get_billing_email() ) : ?>
+						<li class="woocommerce-order-overview__email email">
+							<?php esc_html_e( 'Email:', 'woocommerce' ); ?>
+							<strong><?php echo $order->get_billing_email(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></strong>
 						</li>
+					<?php endif; ?>
 
-						<li class="woocommerce-order-overview__date date">
-							<?php esc_html_e( 'Date:', 'woocommerce' ); ?>
-							<strong><?php echo wc_format_datetime( $order->get_date_created() ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></strong>
-						</li>
+					<li class="woocommerce-order-overview__total total">
+						<?php esc_html_e( 'Total:', 'woocommerce' ); ?>
+						<strong><?php echo $order->get_formatted_order_total(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></strong>
+					</li>
 
-						<?php if ( is_user_logged_in() && $order->get_user_id() === get_current_user_id() && $order->get_billing_email() ) : ?>
-							<li class="woocommerce-order-overview__email email">
-								<?php esc_html_e( 'Email:', 'woocommerce' ); ?>
-								<strong><?php echo $order->get_billing_email(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></strong>
-							</li>
-						<?php endif; ?>
+					
+					<p style="text-align: center; margin: 10px 0; color: #44C4A1;">[icon name="check-circle" prefix="fas"]</p>	
+				</ul>
 
-						<li class="woocommerce-order-overview__total total">
-							<?php esc_html_e( 'Total:', 'woocommerce' ); ?>
-							<strong><?php echo $order->get_formatted_order_total(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></strong>
-						</li>
-
-						<?php
-						$payment_method_title = $order->get_payment_method_title();
-						if ( $payment_method_title ) :
-						?>
-						<li class="woocommerce-order-overview__payment-method method">
-							<?php esc_html_e( 'Payment method:', 'woocommerce' ); ?>
-							<strong><?php echo wp_kses_post( $payment_method_title ); ?></strong>
-						</li>
-						<?php endif; ?>
-						<p style="text-align: center; margin: 10px 0; color: #44C4A1;">[icon name="check-circle" prefix="fas"]</p>	
-					</ul>
-
-					<div class="clear"></div>
-				</div>
+				<div class="clear"></div>
 			</div>
+		</div>
+
 		<?php endif; ?>
-	<?php else : ?>
+		
+		<?php else : ?>
 
-		<p class="woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received" style="margin: 16px; ">
-			<img class="alignnone wp-image-763" src="../wp-content/uploads/2022/04/image-3.png" alt="" width="100"  style="padding: 10px 0; margin-top: 4px;" />
-			</br>
+			<p class="woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received" style="margin: 16px; ">
+				
+				<img class="alignnone wp-image-763" src="../wp-content/uploads/2022/04/image-3.png" alt="" width="100"  style="padding: 10px 0; margin-top: 4px;" />
+				</br>
+				<!-- đổi thành mã order_ID -->
+				<label style="text-align: center; margin: 0;"><?php the_title(); ?></label>
+				</br>
 
-			<label style="text-align: center; margin: 0;"><?php the_title();?></label>
-			</br>
+				<label style="text-align: center; margin: 0; color: #FFC226;">VÉ CỔNG</label>
+				</br>
 
-			<label style="text-align: center; margin: 0; color: #FFC226;">VÉ CỔNG</label>
-			</br>
+				<label style="text-align: center; margin: 0; font-size: 24px; font-weight: 700;">---</label>
+				</br>
 
-			<label style="text-align: center; margin: 0; font-size: 24px; font-weight: 700;">---</label>
-			</br>
-
-			<label >Ngày sử dụng: <?php if(isset($_GET["date"])) { echo $_GET["date"]; } ?></label>
-			</br>
-			
-			<a style="text-align: center; margin-top: 10px; color: #44C4A1;">[icon name="check-circle" prefix="fas"]</a>
-		</p>
-						
+				<label >Ngày sử dụng: <?php if(isset($_GET["date"])) { echo $_GET["date"]; } ?></label>
+				</br>
+				
+				<a style="text-align: center; margin-top: 10px; color: #44C4A1;">[icon name="check-circle" prefix="fas"]</a>
+			</p>
 	<?php endif; ?>
-
+	
 </div>
-
 <?php
 
 }
 
-add_shortcode('outputticket','outputticket');
+add_shortcode('confirmation_order_details','confirmation_order_details');
+
 
 
 // Trang Giỏ hàng sẽ được chuyển hướng sang trang Thanh toán.
@@ -212,7 +208,8 @@ function custom_order_button_text($order_button_text) {
 }
 
 
-// chuyển ra trang thanh toán thành công
+
+// chuyển ra trang thanh toán thành công (cần đổi URL khi up hosting)
 add_action( 'template_redirect', 'woo_custom_redirect_after_purchase' );
 function woo_custom_redirect_after_purchase() {
 	global $wp;
@@ -221,5 +218,4 @@ function woo_custom_redirect_after_purchase() {
 		exit;
 	}
 }
-
 

@@ -1,0 +1,183 @@
+2022-05-24T02:14:37+00:00 CRITICAL Uncaught Error: Call to a member function get_order_number() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:146
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): outputticket('', '', 'outputticket')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(output...', 'do_shortcode_ta...', '\n[outputticket]...')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[outputticket]...')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\row.php(208): flatsome_contentfix('\n[outputticket]...')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): ux_col(Array, '\n[outputticket]...', 'col')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(col|ou...', 'do_ in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 146
+
+2022-05-24T02:14:55+00:00 CRITICAL Uncaught Error: Call to a member function get_order_number() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:146
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): outputticket('', '', 'outputticket')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(output...', 'do_shortcode_ta...', '\n[outputticket]...')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[outputticket]...')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\row.php(208): flatsome_contentfix('\n[outputticket]...')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): ux_col(Array, '\n[outputticket]...', 'col')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(col|ou...', 'do_ in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 146
+
+2022-05-24T02:15:58+00:00 CRITICAL Uncaught Error: Call to a member function get_order_number() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:146
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): outputticket('', '', 'outputticket')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(output...', 'do_shortcode_ta...', '\n[outputticket]...')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[outputticket]...')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\row.php(208): flatsome_contentfix('\n[outputticket]...')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): ux_col(Array, '\n[outputticket]...', 'col')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(col|ou...', 'do_ in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 146
+
+2022-05-24T02:25:51+00:00 CRITICAL Uncaught Error: Call to a member function get_order_number() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:147
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): outputticket('', '', 'outputticket')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(output...', 'do_shortcode_ta...', '\n[outputticket]...')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[outputticket]...')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\row.php(208): flatsome_contentfix('\n[outputticket]...')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): ux_col(Array, '\n[outputticket]...', 'col')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(col|ou...', 'do_ in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 147
+
+2022-05-24T02:26:15+00:00 CRITICAL Uncaught Error: Call to a member function get_order_number() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:147
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): outputticket('', '', 'outputticket')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(output...', 'do_shortcode_ta...', '\n[outputticket]...')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[outputticket]...')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\row.php(208): flatsome_contentfix('\n[outputticket]...')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): ux_col(Array, '\n[outputticket]...', 'col')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(col|ou...', 'do_ in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 147
+
+2022-05-24T02:27:01+00:00 CRITICAL Uncaught Error: Call to a member function get_order_number() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:147
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): outputticket('', '', 'outputticket')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(output...', 'do_shortcode_ta...', '\n[outputticket]...')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[outputticket]...')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\row.php(208): flatsome_contentfix('\n[outputticket]...')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): ux_col(Array, '\n[outputticket]...', 'col')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(col|ou...', 'do_ in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 147
+
+2022-05-24T02:27:54+00:00 CRITICAL Uncaught Error: Call to a member function get_order_number() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:147
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): outputticket('', '', 'outputticket')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(output...', 'do_shortcode_ta...', '\n[outputticket]...')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[outputticket]...')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\row.php(208): flatsome_contentfix('\n[outputticket]...')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): ux_col(Array, '\n[outputticket]...', 'col')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(col|ou...', 'do_ in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 147
+
+2022-05-24T02:28:16+00:00 CRITICAL Uncaught Error: Call to a member function get_order_number() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:147
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): outputticket('', '', 'outputticket')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(output...', 'do_shortcode_ta...', '\n[outputticket]...')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[outputticket]...')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\row.php(208): flatsome_contentfix('\n[outputticket]...')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): ux_col(Array, '\n[outputticket]...', 'col')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(col|ou...', 'do_ in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 147
+
+2022-05-24T02:31:05+00:00 CRITICAL Uncaught Error: Call to a member function get_order_number() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:147
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): outputticket('', '', 'outputticket')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(output...', 'do_shortcode_ta...', '\n[outputticket]...')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[outputticket]...')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\row.php(208): flatsome_contentfix('\n[outputticket]...')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): ux_col(Array, '\n[outputticket]...', 'col')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(col|ou...', 'do_ in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 147
+
+2022-05-24T02:34:12+00:00 CRITICAL syntax error, unexpected 'do_action' (T_STRING) in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 100
+
+2022-05-24T02:34:35+00:00 CRITICAL syntax error, unexpected 'do_action' (T_STRING) in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 100
+
+2022-05-24T02:36:16+00:00 CRITICAL Uncaught Error: Call to a member function get_order_number() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:105
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): outputticket('', '', 'outputticket')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(output...', 'do_shortcode_ta...', '\n[outputticket]...')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[outputticket]...')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\row.php(208): flatsome_contentfix('\n[outputticket]...')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): ux_col(Array, '\n[outputticket]...', 'col')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(col|ou...', 'do_ in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 105
+
+2022-05-24T02:36:26+00:00 CRITICAL Uncaught Error: Call to a member function get_order_number() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:105
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): outputticket('', '', 'outputticket')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(output...', 'do_shortcode_ta...', '\n[outputticket]...')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[outputticket]...')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\row.php(208): flatsome_contentfix('\n[outputticket]...')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): ux_col(Array, '\n[outputticket]...', 'col')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(col|ou...', 'do_ in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 105
+
+2022-05-24T02:36:33+00:00 CRITICAL Uncaught Error: Call to a member function get_order_number() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:105
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): outputticket('', '', 'outputticket')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(output...', 'do_shortcode_ta...', '\n[outputticket]...')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[outputticket]...')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\row.php(208): flatsome_contentfix('\n[outputticket]...')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): ux_col(Array, '\n[outputticket]...', 'col')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(col|ou...', 'do_ in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 105
+
+2022-05-24T02:45:18+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:93
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): outputticket('', '', 'outputticket')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(output...', 'do_shortcode_ta...', '\n[outputticket]...')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[outputticket]...')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\row.php(208): flatsome_contentfix('\n[outputticket]...')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): ux_col(Array, '\n[outputticket]...', 'col')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(col|ou...', 'do_shortcode_t in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 93
+
+2022-05-24T02:45:37+00:00 CRITICAL Uncaught Error: Call to a member function get_order_number() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:105
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): outputticket('', '', 'outputticket')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(output...', 'do_shortcode_ta...', '\n[outputticket]...')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[outputticket]...')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\row.php(208): flatsome_contentfix('\n[outputticket]...')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): ux_col(Array, '\n[outputticket]...', 'col')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(col|ou...', 'do_ in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 105
+
+2022-05-24T02:46:28+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:97
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): outputticket('', '', 'outputticket')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(output...', 'do_shortcode_ta...', '\n[outputticket]...')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[outputticket]...')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\row.php(208): flatsome_contentfix('\n[outputticket]...')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): ux_col(Array, '\n[outputticket]...', 'col')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(col|ou...', 'do_shortcode_t in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 97
+
+2022-05-24T02:55:45+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:162
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\class-wp-hook.php(307): outputticket('')
+#1 C:\xampp\htdocs\littleandlittle\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\littleandlittle\wp-includes\general-template.php(3042): do_action('wp_head')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\header.php(10): wp_head()
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\template.php(770): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\littleandlittle\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#8 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\page-b in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 162
+
+2022-05-24T03:11:04+00:00 CRITICAL Cannot redeclare outputticket() (previously declared in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:94) in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\woocommerce\checkout\thankyou.php on line 103
+

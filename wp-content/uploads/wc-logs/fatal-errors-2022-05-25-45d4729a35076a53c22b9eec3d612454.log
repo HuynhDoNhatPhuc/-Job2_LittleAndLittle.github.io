@@ -1,0 +1,113 @@
+2022-05-25T02:17:35+00:00 CRITICAL syntax error, unexpected '<' in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 101
+
+2022-05-25T02:17:35+00:00 CRITICAL syntax error, unexpected '<' in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 101
+
+2022-05-25T02:17:41+00:00 CRITICAL syntax error, unexpected '<' in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 101
+
+2022-05-25T02:17:50+00:00 CRITICAL syntax error, unexpected '<' in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 101
+
+2022-05-25T02:19:51+00:00 CRITICAL syntax error, unexpected '<' in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 101
+
+2022-05-25T02:21:52+00:00 CRITICAL syntax error, unexpected '<' in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 101
+
+2022-05-25T02:33:24+00:00 CRITICAL Uncaught Error: Unsupported operand types in C:\xampp\htdocs\littleandlittle\wp-content\plugins\pinterest-for-woocommerce\src\TrackerSnapshot.php:88
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-content\plugins\pinterest-for-woocommerce\src\TrackerSnapshot.php(61): Automattic\WooCommerce\Pinterest\TrackerSnapshot::parse_settings()
+#1 C:\xampp\htdocs\littleandlittle\wp-content\plugins\pinterest-for-woocommerce\src\TrackerSnapshot.php(43): Automattic\WooCommerce\Pinterest\TrackerSnapshot::include_snapshot_data(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\class-wp-hook.php(307): Automattic\WooCommerce\Pinterest\TrackerSnapshot::Automattic\WooCommerce\Pinterest\{closure}(Array)
+#3 C:\xampp\htdocs\littleandlittle\wp-includes\plugin.php(191): WP_Hook->apply_filters(Array, Array)
+#4 C:\xampp\htdocs\littleandlittle\wp-content\plugins\woocommerce\includes\class-wc-tracker.php(175): apply_filters('woocommerce_tra...', Array)
+#5 C:\xampp\htdocs\littleandlittle\wp-content\plugins\woocommerce\includes\class- in C:\xampp\htdocs\littleandlittle\wp-content\plugins\pinterest-for-woocommerce\src\TrackerSnapshot.php on line 88
+
+2022-05-25T04:01:24+00:00 CRITICAL Uncaught Error: Call to a member function get_order_number() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:106
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): confirmation_order_details('', '', 'confirmation_or...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(confir...', 'do_shortcode_ta...', '\n[confirmation_...')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[confirmation_...')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\row.php(208): flatsome_contentfix('\n[confirmation_...')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): ux_col(Array, '\n[confirmation_...', 'col')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\ in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 106
+
+2022-05-25T04:09:20+00:00 CRITICAL Uncaught Error: Call to a member function get_payment_method() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:107
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): confirmation_order_details('', '', 'confirmation_or...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(confir...', 'do_shortcode_ta...', '\n[confirmation_...')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[confirmation_...')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\row.php(208): flatsome_contentfix('\n[confirmation_...')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): ux_col(Array, '\n[confirmation_...', 'col')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[( in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 107
+
+2022-05-25T04:16:06+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:107
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): confirmation_order_details('', '', 'confirmation_or...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(confir...', 'do_shortcode_ta...', '\n[confirmation_...')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[confirmation_...')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\row.php(208): flatsome_contentfix('\n[confirmation_...')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): ux_col(Array, '\n[confirmation_...', 'col')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(col|co in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 107
+
+2022-05-25T04:21:56+00:00 CRITICAL Uncaught Error: Call to a member function get_order_number() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:107
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): confirmation_order_details('', '', 'confirmation_or...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(confir...', 'do_shortcode_ta...', '\n[confirmation_...')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[confirmation_...')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\row.php(208): flatsome_contentfix('\n[confirmation_...')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): ux_col(Array, '\n[confirmation_...', 'col')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\ in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 107
+
+2022-05-25T04:22:11+00:00 CRITICAL Uncaught Error: Call to a member function get_order_number() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:107
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): confirmation_order_details('', '', 'confirmation_or...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(confir...', 'do_shortcode_ta...', '\n[confirmation_...')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[confirmation_...')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\row.php(208): flatsome_contentfix('\n[confirmation_...')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): ux_col(Array, '\n[confirmation_...', 'col')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\ in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 107
+
+2022-05-25T08:30:37+00:00 CRITICAL Uncaught Error: Call to a member function get_order_number() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:160
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): confirmation_order_details('', '', 'confirmation_or...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(confir...', 'do_shortcode_ta...', '\n[confirmation_...')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[confirmation_...')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\row.php(208): flatsome_contentfix('\n[confirmation_...')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): ux_col(Array, '\n[confirmation_...', 'col')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\ in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 160
+
+2022-05-25T08:33:41+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:160
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): confirmation_order_details('', '', 'confirmation_or...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(confir...', 'do_shortcode_ta...', '\n[confirmation_...')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[confirmation_...')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\row.php(208): flatsome_contentfix('\n[confirmation_...')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): ux_col(Array, '\n[confirmation_...', 'col')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(col|co in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 160
+
+2022-05-25T09:45:58+00:00 CRITICAL syntax error, unexpected 'else' (T_ELSE) in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 157
+
+2022-05-25T09:54:00+00:00 CRITICAL syntax error, unexpected 'else' (T_ELSE) in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 156
+
+2022-05-25T09:54:41+00:00 CRITICAL Uncaught Error: Call to a member function has_status() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:102
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): confirmation_order_details('', '', 'confirmation_or...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(confir...', 'do_shortcode_ta...', '\n[confirmation_...')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[confirmation_...')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\row.php(208): flatsome_contentfix('\n[confirmation_...')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): ux_col(Array, '\n[confirmation_...', 'col')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(co in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 102
+

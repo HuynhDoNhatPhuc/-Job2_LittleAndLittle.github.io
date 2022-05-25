@@ -31,3 +31,25 @@ Stack trace:
 #6 [internal function]: do_shortcode_tag(Array)
 #7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(col|ou...', 'do_short in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 321
 
+2022-05-23T10:28:44+00:00 CRITICAL Uncaught Error: Call to a member function get_order_number() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:148
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): outputticket('', '', 'outputticket')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(output...', 'do_shortcode_ta...', '\n[outputticket]...')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[outputticket]...')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\row.php(208): flatsome_contentfix('\n[outputticket]...')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): ux_col(Array, '\n[outputticket]...', 'col')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(col|ou...', 'do_ in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 148
+
+2022-05-23T10:44:55+00:00 CRITICAL Uncaught Error: Call to a member function get_order_number() on null in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php:147
+Stack trace:
+#0 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): outputticket('', '', 'outputticket')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(output...', 'do_shortcode_ta...', '\n[outputticket]...')
+#3 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\helpers\helpers-shortcode.php(203): do_shortcode('\n[outputticket]...')
+#4 C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\inc\shortcodes\row.php(208): flatsome_contentfix('\n[outputticket]...')
+#5 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(356): ux_col(Array, '\n[outputticket]...', 'col')
+#6 [internal function]: do_shortcode_tag(Array)
+#7 C:\xampp\htdocs\littleandlittle\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(col|ou...', 'do_ in C:\xampp\htdocs\littleandlittle\wp-content\themes\flatsome\functions.php on line 147
+

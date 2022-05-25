@@ -1,5 +1,5 @@
-# Translation of WordPress - 5.9.x - Development - Administration - Network Admin in Vietnamese
-# This file is distributed under the same license as the WordPress - 5.9.x - Development - Administration - Network Admin package.
+# Translation of WordPress - 6.0.x - Development - Administration - Network Admin in Vietnamese
+# This file is distributed under the same license as the WordPress - 6.0.x - Development - Administration - Network Admin package.
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2021-07-09 01:27:28+0000\n"
@@ -7,9 +7,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"X-Generator: GlotPress/4.0.0-alpha.1\n"
 "Language: vi_VN\n"
-"Project-Id-Version: WordPress - 5.9.x - Development - Administration - Network Admin\n"
+"Project-Id-Version: WordPress - 6.0.x - Development - Administration - Network Admin\n"
 
 #. translators: %s: Theme name.
 #: wp-admin/includes/class-wp-ms-themes-list-table.php:737
@@ -685,10 +685,6 @@ msgstr "Tại đây bạn có thể:"
 msgid "Welcome to your Network Admin. This area of the Administration Screens is used for managing all aspects of your Multisite Network."
 msgstr "Chào mừng bạn tới trang Quản trị Network. Tại đây bạn có thể tìm thấy tất cả công cụ để quản lý network các trang web của bạn."
 
-#: wp-admin/network/upgrade.php:141
-msgid "WordPress has been updated! Before we send you on your way, we need to individually upgrade the sites in your network."
-msgstr "WordPress đã được nâng cấp! Tiếp theo, bạn cần nâng cấp lần lượt các trang web trong network của bạn."
-
 #: wp-admin/network/upgrade.php:24
 msgid "Only use this screen once you have updated to a new version of WordPress through Updates/Available Updates (via the Network Administration navigation menu or the Toolbar). Clicking the Upgrade Network button will step through each site in the network, five at a time, and make sure any database updates are applied."
 msgstr "Chỉ sử dụng màn hình này khi bạn đã nâng cấp WordPress lên phiên bản mới hơn từ màn hình Nâng cấp/Nâng cấp khả thi (thông qua thực đơn Quản trị Mạng lưới hoặc Thanh công cụ). Bấm nút Nâng cấp Mạng lưới sẽ kiểm tra tất cả trang mạng, năm trang một lần, để đảm bảo cơ sở dữ liệu đã được nâng cấp hợp lệ."
@@ -1084,10 +1080,6 @@ msgstr "Bảng này hiển thị tất cả người sử dụng trên mạng l�
 msgid "If this process fails for any reason, users logging in to their sites will force the same update."
 msgstr "Nếu tiến trình này thất bại vì bất kỳ lý do gì, người sử dụng đang đăng nhập vào trang mạng của họ sẽ phải thực hiện nâng cấp tương tự."
 
-#: wp-admin/network/upgrade.php:25
-msgid "If a version update to core has not happened, clicking this button won&#8217;t affect anything."
-msgstr "Nếu một phiên bản không nâng cấp phần lõi, bấm vào nút này sẽ không có tác dụng."
-
 #: wp-admin/network/themes.php:301
 msgid "If the network admin disables a theme that is in use, it can still remain selected on that site. If another theme is chosen, the disabled theme will not appear in the site&#8217;s Appearance > Themes screen."
 msgstr "Nếu quản trị viên mạng lưới vô hiệu hóa một chủ đề đang được sử dụng, nó vẫn có thể tiếp tục hoạt động trên trang mạng đó. Nếu chủ đề khác được chọn, chủ đề đã bị vô hiệu hóa sẽ không xuất hiện tại màn hình Diện Mạo > Chủ Đề nữa."
@@ -1116,10 +1108,6 @@ msgstr "Cài đặt đăng ký có thể tắt/bật đăng ký công khai. Nế
 msgid "This screen sets and changes options for the network as a whole. The first site is the main site in the network and network options are pulled from that original site&#8217;s options."
 msgstr "Màn hình này chỉ định và thay đổi các tùy chọn cho mạng lưới một cách tổng thể. Trang mạng đầu tiên là trang mạng chính trong mạng lưới và các tùy chọn mạng lưới được lấy từ các tùy chọn của trang mạng gốc đó."
 
-#: wp-admin/network/upgrade.php:125
-msgid "If your browser doesn&#8217;t start loading the next page automatically, click this link:"
-msgstr "Nếu trình duyệt của bạn không tự động tải trang tiếp theo, bấm vào liên kết này:"
-
 #: wp-admin/network/settings.php:302
 msgid "If you want to ban domains from site registrations. One domain per line."
 msgstr "Nếu bạn muốn cấm đăng ký trang mạng cho tên miền nào đó. Mỗi dòng một tên miền."
@@ -1127,10 +1115,6 @@ msgstr "Nếu bạn muốn cấm đăng ký trang mạng cho tên miền nào đ
 #: wp-admin/network/settings.php:282
 msgid "If you want to limit site registrations to certain domains. One domain per line."
 msgstr "Nếu bạn muốn giới hạn đăng ký trang mạng cho tên miền nào đó. Mỗi dòng một tên miền."
-
-#: wp-admin/network/site-new.php:40
-msgid "Can&#8217;t create an empty site."
-msgstr "Không thể tạo một trang mạng rỗng."
 
 #: wp-admin/network/users.php:268
 msgid "Users removed from spam."
